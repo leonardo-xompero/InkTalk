@@ -6,10 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Home - InkTalk</title>
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="assets/js/emailFunction.js"></script>
+  <!--
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+-->
     <style>
         #poster {
             width: 100%;
@@ -19,7 +26,58 @@
 </head>
 
 <body>
-    
+    <!--
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">InkTalk</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Contacts
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Tommaso Carraro</a>
+                <a class="dropdown-item" href="#">Matteo Rizzi</a>
+                <a class="dropdown-item" href="#">Leonardo Xompero</a>
+                <a class="dropdown-item" href="#">Benjamin Südi</a>
+                <a class="dropdown-item" href="#">Morva Rashtchian</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    -->
+
+      <nav class="navbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">InkTalk</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Contacts <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Tommaso Carraro</a></li>
+                <li><a class="dropdown-item" href="#">Matteo Rizzi</a></li>
+                <li><a class="dropdown-item" href="#">Leonardo Xompero</a></li>
+                <li><a class="dropdown-item" href="#">Benjamin Südi</a></li>
+                <li><a class="dropdown-item" href="#">Morva Rashtchian</a></li>
+              </ul>
+            </li>
+          </ul>
+        <div class="navbar-header" style="float: right;">
+        <a class="navbar-brand" href="#"><h3>contact@inktalk.eu</h3></a>
+        </div>
+        </div>
+      </nav>
+
     <img id="poster" src="assets/img/poster.svg">
     <script  src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
